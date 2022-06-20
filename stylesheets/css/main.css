@@ -196,8 +196,8 @@
     position: fixed;
     left: 0%;
     top: 0%;
-    width: 1px;
-    height: 1px;
+    width: 50%;
+    height: 100%;
     display: none;
     box-shadow: 5px 5px 5px rgb(94,94,94);
     transition: 1s;
