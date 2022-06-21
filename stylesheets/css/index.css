@@ -119,7 +119,7 @@ body>section.splash>article>button {
     background-color: #ffffffff;
     border: none;
     border-radius: 0.5rem;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #555;
     color: #000000;
     cursor: pointer;
     margin-top: 1rem;
