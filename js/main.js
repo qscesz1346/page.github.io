@@ -3,7 +3,7 @@
 let loginflag = false;
 const zIdx = 999;
 
-$('#loginicon').on('click', function () {
+$('.loginicon').on('click', function () {
     if (loginflag == false) {
         $('#login')
             .css('display', 'block')
@@ -47,13 +47,13 @@ $('#BG').on('click', function () {
         .css('display', 'none');
 });
 
-$('#loginicon').on('mouseover', function () {
+$('.loginicon').on('mouseover', function () {
     $(this)
         .css('cursor', 'pointer')
         .css('opacity', '0.6');
 });
 
-$('#loginicon').on('mouseleave', function () {
+$('.loginicon').on('mouseleave', function () {
     $(this)
         .css('opacity', '1')
         .css('cursor', 'auto');

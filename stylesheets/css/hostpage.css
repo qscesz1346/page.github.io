@@ -1,0 +1,53 @@
+#hostH1 {
+    font-size: 50px; 
+    font-family:'나눔스퀘어 ExtraBold';
+    text-align:center; 
+    display:block;
+    color:black;
+    margin-bottom: 5%;
+    left:0px;
+    top:0px;
+}
+#people {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+#people img {
+    width: 350px;
+    height: 350px;
+    margin: 0 3%;
+}
+td{
+    height: 100px;
+}
+.dropdown{
+    width:70%;height:70%; margin: 10px auto; 
+    text-align: left;
+}
+.checkbox{
+    width:50%;height:50%; margin:0px auto;text-align:left;
+}
+#logo {
+    width:98.9333px; height:80px;
+    margin: 2%;
+}
+#logo ~ table {
+    width: 40%;
+    margin: 5% auto;
+}
+input[type="text"] {
+    border: 1px solid lightgray;
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+input[type="text"]:focus {
+outline: none;
+}
+#btn{
+    text-align:left;
+}

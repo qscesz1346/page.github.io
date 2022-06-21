@@ -1,0 +1,52 @@
+main{
+    height: 1000px;
+    margin-top:15%;
+}
+fieldset {
+border: 0;
+width: 50%;
+margin: 0 auto;
+margin-bottom: 100px;
+}
+
+.button-area {
+    margin:0% 8%;
+    line-height: 2.5em;
+    display: flex;
+    align-items: center;
+}
+button:hover {
+    cursor: pointer;
+}
+.button-style{
+    font-size:15px; 
+    color:rgb(255,255,255); 
+    background-color: rgb(82, 143, 108);
+    border-radius: 6px; 
+    line-height: 2.5em; 
+    text-align:center;
+    border-color: rgb(82, 143, 108);
+    align-items: center;
+}
+.button-style:hover {
+    background-color: rgb(136,202,169);
+    border-color: rgb(136,202,169);
+}
+.resv-houseimg img{
+    width: 200px;
+    height: 200px;
+    
+}
+.reserv-info{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+    margin-left: 0;
+}
+
+.house-info{
+    margin-top:5%;
+}
+.house-info div {
+    margin: 5% 0;
+}

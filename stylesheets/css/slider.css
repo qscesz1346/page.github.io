@@ -1,0 +1,17 @@
+.swiper-container {
+}
+/* .swiper-slide {
+	text-align:center;
+	display:flex; 
+	align-items:center;	
+    justify-content:center;
+	flex-direction: column;
+
+} */
+.swiper-slide img {
+	box-shadow:0 0 5px #555;
+	width: 200px;
+    height: 200px;
+    margin: 0;
+	margin-bottom: 10px;
+}

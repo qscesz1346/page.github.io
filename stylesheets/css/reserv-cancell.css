@@ -1,0 +1,56 @@
+/* -------------예약 확인/취소 몸통 ---------------------*/
+
+
+.reserv-cancell-title{
+    width: 140px;
+    padding-left: 65px;
+}
+.reserv-cancell-hrline{
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left:40%;
+}
+
+/* ------------------------div 박스 ------------------- */
+
+.reserv-cancell-Boxone{
+    width: 800px;
+    font-size: 12px;
+}
+.reserv-cancell-Boxtow{
+    display:flex;
+}
+.reserv-cancell-BoxStyle{
+    padding-left: 65px;
+    padding-bottom: 20px;
+    vertical-align: center;
+}
+
+
+/*  버튼  */
+.reserv-cancell-btn{
+    position: relative;
+    padding: 10%;
+}
+.reserv-cancell-btnStyle{
+    margin-left: 15px;
+    width: 60px;
+    height: 30px;
+    background-color: #293d33;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: '나눔스퀘어기본';
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow:0 0 5px #555;
+}
+
+.reserv-cancell-btnStyle:hover {
+    background-color: rgb(136,202,169);
+    box-shadow:0 0 5px #555;
+}
+
+    
+

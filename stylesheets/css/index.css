@@ -125,6 +125,7 @@ body>section.splash>article>button {
     margin-top: 1rem;
     padding: 0.825rem 1.33rem;
     transition-duration: 250ms;
+    
 }
 
 body>section.splash>article>button:hover {
@@ -140,12 +141,12 @@ body>section.splash>div {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center top;
     opacity: 0;
     position: absolute;
     pointer-events: none;
-    transition-duration: 1500ms;
+    transition-duration: 500ms;
 }
 
 body>section.splash>div.visible {

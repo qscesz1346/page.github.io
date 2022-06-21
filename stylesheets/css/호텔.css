@@ -1,0 +1,33 @@
+.camp-img {
+    display: flex;
+    margin: 30px auto;
+    width: 80%;
+}
+.camp-img div img {
+    width: 70%;
+    margin: 0 15px 15px 0;
+}
+.camp-img img:nth-of-type(3n),
+.camp-img img:last-child {
+    margin-right: 0;
+}
+.log1 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.log1 a {
+    font-size: 1rem;
+}
+.log1 img {
+    width: 5%;
+}
+.log1 hr {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 80%;
+    height: 3px;
+    background-color: gray;
+}

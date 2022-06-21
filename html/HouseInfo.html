@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/css/common.css">
+    <link rel="stylesheet" href="../stylesheets/css/main.css">
+    <script src="https://kit.fontawesome.com/9c09db3bf3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href="main-logined.html">
+                    <img src="../stylesheets/images/logo.png" alt="logo" style="width:80px;">
+                </a>
+                <div id="inputicon">
+                    <input type="text" class="input-box">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="loginedicon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1370/1370267.png" alt="loginedIcon">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offmy">
+        <div class="offhead">
+            <input type="checkbox" id="chk">
+            <label for="chk" id="offout">
+                <span id="offouttop"></span>
+                <span id="offoutbottom"></span>
+            </label>
+            <h3>이동관</h3>님
+        </div>
+        <div class="offlogo">
+            <img id="offmyimg" src="https://cdn-icons-png.flaticon.com/512/1370/1370267.png" alt="loginedIcon">
+        </div>
+        <table class="offmain">
+            <tr>
+                <th>마이페이지</th>
+            </tr>
+            <tr>
+                <td><a href="mypage.html">내 정보</a></td>
+            </tr>
+            <tr>
+                <td><a href="">위시리스트</a></td>
+            </tr>
+            <tr>
+                <td><a href="">숙소관리</a></td>
+            </tr>
+            <tr>
+                <td><a href="">예약 확인 / 취소</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="main.html">로그아웃</a></td>
+            </tr>
+            <tr>
+                <td><a href="">회원탈퇴</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="BG"></div>
+
+        <style>
+            *{
+                
+            }
+        
+
+            .first-area{
+                width:100%;
+                height: 30%;
+                
+            }
+            .second-area {
+                position:relative;
+                left: 0;
+                top: 0;
+            }
+            .third-area{
+                width:100%;
+                height: 400px;
+                background-color: gray;
+            }
+            .second-line{
+                width: 200px;
+                height: 200px;
+              
+            }
+            #poto1{
+            display: flex;
+            }
+            .third-line-thr{
+                
+                margin-top: 10px;
+                margin-left: 120px;
+                border: 1px solid gray;
+            }
+            .body{
+                width: 70%;
+                margin: 0 auto;
+            }
+            .third-line-one{
+                margin-bottom: 10px;
+            }
+            #a1{
+                margin-top:20px;
+            }
+            .title{
+                font-weight:bold;
+                font-size:32px;
+            }
+            #third-line-2nd {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+            }
+            #third-line-2nd + div {
+                margin: 5px;
+                width: 30%;
+            }
+            #third-line-2nd + div select {
+                margin: 5px;
+                width: 95%;
+                height: 30px;
+                padding-left: 20px;
+            }
+            .third-line-two {
+                /* border-collapse: collapse; */
+                text-align: center;
+                margin: 5px;
+            }
+            .third-line-two tr:nth-child(2) {
+                position:relative;
+                top:-2px;
+            }
+            .third-line-two input {
+                border: none;
+                outline: none;
+                text-align: center;
+            }
+            input[type='text'] {
+                width: 80%;
+            }
+            .td1 {
+                border: 1px solid gray;
+                border-bottom: 0;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            .td2 {
+                border: 1px solid gray;
+                border-top: 0;
+                padding-bottom: 5px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            #resv {
+                margin: 1%;
+                width: 28%;
+                height: 40px;
+            }
+            .houseinfo-main {
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 12%;
+            }
+        </style>
+<!------------------------------- Slick으로 house info img 처리 -------------------------->
+        <!-- 3번화면 main-->
+    <div class="houseinfo-main">
+         <div class="first-area">
+             <div class="first-line">
+                <h3>#주택</h3>
+            </div>
+
+            <!-- img line-->
+            <div class="second-line">
+                <div id="poto1">
+                    <img src="../stylesheets/images/room1.webp" style=" width: 250px; height: 200px; margin: 20px;">
+                    <img src="../stylesheets/images/room2.webp" style=" width: 250px; height: 200px; margin: 20px">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second-area">
+            <!-- 날짜 선택  -->
+            <div class="third-line">
+                <div class="third-line-one">
+                    <p id="a1">150,679원 /박</p>
+                </div>
+                <div id="third-line-2nd">
+                    <table class="third-line-two">
+                        <tr>
+                            <td class="td1">
+                                <input type="text" placeholder="체크인" readonly>
+                            </td>
+                        </tr>                    
+                        <tr>
+                            <td class="td2">
+                                <input type="date" value="2022-06-08">
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="third-line-two">
+                        <tr>
+                            <td class="td1">
+                                <input type="text" placeholder="체크아웃" readonly> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td2">
+                                <input type="date" value="2022-06-09">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <select>
+                        <option>1명</option>
+                        <option>2명</option>
+                        <option>3명</option>
+                        <option>4명</option>
+                        <option>5명</option>
+                        <option>6명</option>
+                        <option>7명</option>
+                        <option>8명</option>
+                        <option>9명</option>
+                        <option>10명</option>
+                    </select>
+                </div>
+                <button id="resv">예약하기</button>
+                <div>
+                     <div>
+                        <p>150,697x1박</p> 
+                        <p>서비스수수료</p>
+                    </div>
+                    <div>
+                        <p>150,679</p>
+                        <p>0원</p>
+                    </div>
+                </div>
+                <hr style="width: 180px; padding-left: 50px; margin-left: 0px;">
+                <div>
+                    150,697원
+                </div>
+                <hr style="margin-top:50px;">
+            </div>
+            <div style="background-color: lightgray;width: 100px;height: 100px;position: absolute;">
+
+            </div>
+        </div>
+
+
+
+        <div class="third-area">
+            <div class="title" >
+                후기
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">
+                            <h4>VIRBNB</h4>
+                        </a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">회원혜택 안내</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <h4>고객센터</h4>
+                        </a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">자주찾는질문</a></li>
+                    <li><a href="">예약확인</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <h4>ESG</h4>
+                        </a></li>
+                    <li><a href="">그린 앰버서더</a></li>
+                    <li><a href="">캠페인 기부</a></li>
+                </ul>
+            </div>
+            <div class="footer-app">
+                <div class="footer-app-info">
+                    <div>
+                        <h4><a href="">App 다운로드</a></h4>
+                        <span>VIRBNB 앱 설치하고</span><br>
+                        <span>더 편리하게 이용하세요.</span>
+                    </div>
+                    <div class="footer-app-Btn">
+                        <button class="footer-app-Btn-style">구글플레이</button>
+                        <button class="footer-app-Btn-style">앱스토어</button>
+                    </div>
+                </div>
+                <div class="footer-app-QR">
+                    <img src="../stylesheets/images/QRCodeImg.jpg" alt="" style="width: 100px; height: 100px;">
+                </div>
+
+            </div>
+            <div class="footer-center">
+                <div class="footer-center-info">
+                    <h4>전화예약/고객상담</h4>
+                    <span>이용에 궁금하신 점이</span><br>
+                    <span>있으신가요?</span>
+                </div>
+                <div>
+                    <img src="../stylesheets/images/instagram.png" class="footer-icon-img" alt="인스타그램">
+                    <img src="../stylesheets/images/facebook.png" class="footer-icon-img" alt="페이스북">
+                    <img src="../stylesheets/images/youtube.png" class="footer-icon-img" alt="유튜브">
+                    <img src="../stylesheets/images/share.png" class="footer-icon-img" alt="공유">
+
+                </div>
+                <div>
+                    <h4>1500-0000</h4>
+                    <div>
+                        <label>평일</label>
+                        <span>09:00 ~ 18:00</span>
+                    </div>
+                    <div>
+                        <label>점심시간</label>
+                        <span>12:00 ~ 13:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-info">
+                <div class="footer-bottom-menu">
+                    <span>개인정보처리방침 | 이용약관</span>
+                </div>
+                <div>
+                    <span>(주)VIRBNB 대표 : 이동관 |</span>
+                    <span>사업자등록번호 : 100-00-00000 </span>
+                    <button class="footer-bottom-Btn-style">사업자등록번호</button>
+                    <span> | 관광사업자 등록번호 : 제2022-06호</span>
+                </div>
+                <div>
+                    <p>대구광역시 중구 중앙대로 336 반월센트럴타워</p>
+                    <span>전화 : 053-000-0000 | email : virbnb@virbnb.co.kr</span>
+                </div>
+                <hr>
+                <div>
+                    <span>copyright (c) 2022 virbnb</span>
+                </div>
+            </div>
+            <div class="footer-bottom-logo">
+                <img src="../stylesheets/images/logo.png" alt="" class="footer-logo-img">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

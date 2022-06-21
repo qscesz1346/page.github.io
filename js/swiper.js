@@ -59,3 +59,34 @@ const houseswiper = new Swiper('.swiper-container', {
     }
 
 });
+
+const indexSwiper = new Swiper('.swiper-index', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+
+    centeredSlides: true,
+    loop: true,
+    direction: 'horizontal', //vertical , horizontal
+    debugger: false,
+
+    pagination: {
+        el: '.swiper-pagination2',
+        type: 'bullets',
+        clickable: true
+    },
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+
+    speed: 1500,
+
+    breakpoints : {
+        780: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+        }
+    }
+});

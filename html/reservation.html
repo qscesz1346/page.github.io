@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9c09db3bf3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../stylesheets/css/common.css">
+    <link rel="stylesheet" href="../stylesheets/css/main.css">
+    <script defer src="../js/main.js"></script>
+</head>
+
+<body ondragstart="return false">
+
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a href="main-logined.html">
+                    <img src="../stylesheets/images/logo.png" alt="logo" style="width:80px;">
+                </a>
+                <div id="inputicon">
+                    <input type="text" class="input-box">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="loginedicon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1370/1370267.png" alt="loginedIcon">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offmy">
+        <div class="offhead">
+            <input type="checkbox" id="chk">
+            <label for="chk" id="offout">
+                <span id="offouttop"></span>
+                <span id="offoutbottom"></span>
+            </label>
+            <h3>이동관</h3>님
+        </div>
+        <div class="offlogo">
+            <img id="offmyimg" src="https://cdn-icons-png.flaticon.com/512/1370/1370267.png" alt="loginedIcon">
+        </div>
+        <table class="offmain">
+            <tr>
+                <th>마이페이지</th>
+            </tr>
+            <tr>
+                <td><a href="mypage.html">내 정보</a></td>
+            </tr>
+            <tr>
+                <td><a href="">위시리스트</a></td>
+            </tr>
+            <tr>
+                <td><a href="">숙소관리</a></td>
+            </tr>
+            <tr>
+                <td><a href="">예약 확인 / 취소</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="main.html">로그아웃</a></td>
+            </tr>
+            <tr>
+                <td><a href="">회원탈퇴</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="BG"></div>
+    <!-- main -->
+    <style>
+        /* * {
+            border:1px solid black;
+        } */
+
+        /* 메인 */
+        main {
+            margin-top: 12%;
+            height: 100%;
+        }
+
+        .main-area {
+            margin-top: 10%;
+            height: 30%;
+
+        }
+
+        .main-area-t {
+            margin-top: 5%;
+            height: 500px;
+        }
+
+
+        .first-line {
+            margin-top: 0px;
+            width: 10%;
+            font-size: 40px;
+        }
+
+        .second-line {
+
+            width: 80%;
+            height: 300px;
+            margin-left: 10%;
+
+        }
+
+        .main-title {
+            height: 40px;
+        }
+
+        .first-area {
+            display: flex;
+        }
+
+        .first-content {
+            width: 50%;
+            margin: 0 18%;
+        }
+
+        /* 카드 스타일 */
+        .card {
+            width: 18rem;
+            position: absolute;
+            right: 20%;
+            top: 30%;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-text-c {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+
+        }
+
+        .list-group-item {
+            font-size: 12px;
+        }
+
+
+        /* 인풋 */
+        .input-area {
+            padding: 5% 0%;
+            display: flex;
+        }
+
+        .input-pay-area {
+            /* padding:5% 0%; */
+            flex-direction: row;
+
+        }
+
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #input-area-phone {
+            display: inline;
+        }
+
+        .inputbox-phone {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 12px;
+            width: 64%;
+            height: 13%;
+            background-color: #fff;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            box-sizing: border-box;
+            resize: none;
+            font-size: 14px;
+        }
+
+        .inputbox {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 12px;
+            width: 100%;
+            height: 60%;
+            background-color: #fff;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            box-sizing: border-box;
+            resize: none;
+            font-size: 14px;
+        }
+
+        .inputbox-pay {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px 12px;
+            width: 30%;
+            height: 40px;
+            background-color: #fff;
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+            box-sizing: border-box;
+            resize: none;
+            font-size: 14px;
+        }
+
+
+        /* 버튼 스타일 */
+        .button-area {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(82, 143, 108);
+            border-radius: 4px;
+            line-height: 2.5em;
+            text-align: center;
+            border-color: rgb(82, 143, 108);
+        }
+
+        #item-slider {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <main>
+        <div class="main-container">
+            <!-- 예약완료 + 숙소 -->
+            <div class="main-area">
+                <div class="first-content">
+                    <!-- 예약확인 -->
+                    <h1 class="main-title"> 예약 확인</h1>
+
+                    <div class="first-area">
+                        <p class="first-line">
+                            <i class="fa-solid fa-user"></i>
+                        </p>
+                        <!-- 예약 정보 -->
+                        <div class="second-line">
+                            <p>객실 1 : 성인 1명, 주택</p>
+                            <div class="input-area">
+                                <div style="margin-right:5%;">
+                                    <label for="formGroupExampleInput" class="form-label">성</label><br>
+                                    <input type="text" placeholder="내용을 입력해주세요" class="inputbox">
+                                </div>
+                                <div>
+                                    <label for="formGroupExampleInput2" class="form-label">이름</label><br>
+                                    <input type="text" placeholder="내용을 입력해주세요" class="inputbox">
+                                </div>
+                            </div>
+                            <div id="input-area-phone">
+                                <label for="formGroupExampleInput2" class="form-label">휴대폰</label><br>
+                                <input type="text" placeholder="내용을 입력해주세요" class="inputbox-phone">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 숙소카드 -->
+                <div id="card-area">
+                    <div class="card">
+                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-610590548474958306/original/755f23d6-3a81-4f2c-8499-a51cbc9fda68.jpeg?im_w=720"
+                            class="card-img-top" alt="..." style="width:288px;">
+                        <div class="card-body1">
+                            <h5 class="card-title">고객님들이 이 숙박 시설을 매우 마음에 들어합니다!</h5>
+                            <p class="card-text" style="font-size:12px;">체크인 : 6월 29일(일)<br>체크아웃 : 6월 27일(월)<br>1박</p>
+                            <hr>
+                        </div>
+                        <p><b>요금 세부 정보</b></p>
+                        <div class="card-text-c">
+                            <span class="list-group-item">객실 1개 X 1박</span>
+                            <span class="list-group-item">95,627</span>
+                        </div>
+                        <div class="card-text-c">
+                            <span class="list-group-item">세금 및 수수료</span>
+                            <span class="list-group-item">9,562</span>
+                        </div>
+                        <hr>
+
+                        <div class="card-body">
+                            <p>합계</p>
+                            <p>105,189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width:40%; margin-inline-start: 15%; margin-inline-end: 0;">
+
+            <!-- 결제 -->
+
+            <div class="main-area-t">
+                <div class="first-content">
+                    <h1 class="main-title">결제</h1>
+                    <div class="first-area">
+                        <p class="first-line">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </p>
+
+                        <div class="second-line">
+                            <div class="input-pay-area">
+                                <div>
+                                    <input type="radio">신용카드
+                                </div>
+                                <div>
+                                    <span>성명</span><br>
+                                    <input type="text" placeholder="내용을 입력해주세요" class="inputbox-pay">
+
+                                    <span>카드번호</span><br>
+                                    <input type="text" placeholder="내용을 입력해주세요" class="inputbox-pay">
+                                </div>
+                                <div>
+                                    <span>유효기간</span><br>
+                                    MM<input type="text" placeholder="" style="width: 50px; margin-right: 20px;"
+                                        class="inputbox-pay">
+                                    YY<input type="text" placeholder="" style="width: 50px;" class="inputbox-pay">
+                                </div>
+                                <div>
+                                    <span>CVC</span><br>
+                                    <input type="text" placeholder="" style="width: 50px;" class="inputbox-pay">
+
+                                    <span>비밀번호</span><br>
+                                    <input type="text" placeholder="" style="width: 50px;" class="inputbox-pay"> **
+                                </div>
+                                <div>
+                                    <input type="radio">무통장
+                                    <select class="inputbox-pay">
+                                        <option selected>은행</option>
+                                        <option value="1">국민은행</option>
+                                        <option value="2">대구은행</option>
+                                        <option value="3">신한은행</option>
+                                    </select>
+                                    <input type="text" placeholder="계좌번호" style="width:200px;" class="inputbox-pay">
+                                </div>
+                                <div>
+                                    <input type="radio">휴대폰
+                                    <select class="inputbox-pay">
+                                        <option selected>통신사</option>
+                                        <option value="1">KT</option>
+                                        <option value="2">SKT</option>
+                                        <option value="3">LG</option>
+                                        <option value="4">알뜰폰</option>
+                                        <input type="text" placeholder="번호" class="inputbox-pay">
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width:40%; margin-inline-start: 15%; margin-inline-end: 0;">
+            <!-- 예약관리 -->
+            <div class="main-area-t">
+                <div class="first-content">
+                    <h1 class="main-title">예약관리</h1>
+                    <div class="first-area">
+                        <p class="first-line">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </p>
+
+                        <div class="second-line">
+                            <div class="input-box-re">
+                                <div>
+                                    <label for="formGroupExampleInput2" class="form-label">이메일</label><br>
+                                    <input type="text" placeholder="이메일" style="width: 200px;">
+                                    <select>
+                                        <option selected></option>
+                                        <option value="1">직접입력</option>
+                                        <option value="2">naver.com</option>
+                                        <option value="3">daum.net</option>
+                                    </select>
+                                    <label for="formGroupExampleInput2" class="form-label">비밀번호</label><br>
+                                    <input type="text" placeholder="내용을 입력해주세요" style="width: 30%;">
+                                </div>
+                                <div style="margin-top:5%;">
+                                    <label for="formGroupExampleInput2" class="form-label">이용약관</label><br>
+                                    [필수]이용약관에 동의하십니까? <input type="checkbox" name="" value="" checked> 동의함<br>
+                                    [필수]개인정보 수집이용에 동의하십니까? <input type="checkbox" name="" value="" checked> 동의함
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width:40%; margin-inline-start: 15%; margin-inline-end: 0;">
+
+            <!-- 동의및 예약완료버튼 -->
+            <div id="item-slider">
+                <button class="button-area">동의 및 결제완료</button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">
+                            <h4>VIRBNB</h4>
+                        </a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">회원혜택 안내</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <h4>고객센터</h4>
+                        </a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">자주찾는질문</a></li>
+                    <li><a href="">예약확인</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <h4>ESG</h4>
+                        </a></li>
+                    <li><a href="">그린 앰버서더</a></li>
+                    <li><a href="">캠페인 기부</a></li>
+                </ul>
+            </div>
+            <div class="footer-app">
+                <div class="footer-app-info">
+                    <div>
+                        <h4><a href="">App 다운로드</a></h4>
+                        <span>VIRBNB 앱 설치하고</span><br>
+                        <span>더 편리하게 이용하세요.</span>
+                    </div>
+                    <div class="footer-app-Btn">
+                        <button class="footer-app-Btn-style">구글플레이</button>
+                        <button class="footer-app-Btn-style">앱스토어</button>
+                    </div>
+                </div>
+                <div class="footer-app-QR">
+                    <img src="../stylesheets/images/QRCodeImg.jpg" alt="" style="width: 100px; height: 100px;">
+                </div>
+
+            </div>
+            <div class="footer-center">
+                <div class="footer-center-info">
+                    <h4>전화예약/고객상담</h4>
+                    <span>이용에 궁금하신 점이</span><br>
+                    <span>있으신가요?</span>
+                </div>
+                <div>
+                    <img src="../stylesheets/images/instagram.png" class="footer-icon-img" alt="인스타그램">
+                    <img src="../stylesheets/images/facebook.png" class="footer-icon-img" alt="페이스북">
+                    <img src="../stylesheets/images/youtube.png" class="footer-icon-img" alt="유튜브">
+                    <img src="../stylesheets/images/share.png" class="footer-icon-img" alt="공유">
+
+                </div>
+                <div>
+                    <h4>1500-0000</h4>
+                    <div>
+                        <label>평일</label>
+                        <span>09:00 ~ 18:00</span>
+                    </div>
+                    <div>
+                        <label>점심시간</label>
+                        <span>12:00 ~ 13:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-info">
+                <div class="footer-bottom-menu">
+                    <span>개인정보처리방침 | 이용약관</span>
+                </div>
+                <div>
+                    <span>(주)VIRBNB 대표 : 이동관 |</span>
+                    <span>사업자등록번호 : 100-00-00000 </span>
+                    <button class="footer-bottom-Btn-style">사업자등록번호</button>
+                    <span> | 관광사업자 등록번호 : 제2022-06호</span>
+                </div>
+                <div>
+                    <p>대구광역시 중구 중앙대로 336 반월센트럴타워</p>
+                    <span>전화 : 053-000-0000 | email : virbnb@virbnb.co.kr</span>
+                </div>
+                <hr>
+                <div>
+                    <span>copyright (c) 2022 virbnb</span>
+                </div>
+            </div>
+            <div class="footer-bottom-logo">
+                <img src="../stylesheets/images/logo.png" alt="" class="footer-logo-img">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

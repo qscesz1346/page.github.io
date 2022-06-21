@@ -8,6 +8,7 @@
     margin-top: 10%;
     height: 600px;
     box-shadow: 5px 5px 5px gray;
+    display: none;
 }
 
 #member{

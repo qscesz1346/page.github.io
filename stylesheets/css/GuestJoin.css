@@ -1,0 +1,57 @@
+.signUpMain{
+    font-family: 'nanumR';
+    width:40%;
+    margin: 0 auto;
+    margin-top: 12%;
+}
+.signUpTitle{
+    position: relative;
+}
+.signUpTitle h1{
+    font-family: 'nanumEB';
+    position: absolute;
+    left: 38%;top: 42%;
+    font-style: italic;
+    color: white;
+}
+.signUpTitle img{
+    display:block;
+    z-index:-3;
+    width: 450px;
+    margin:0px auto;
+    height: 300px;
+}
+#a1{
+    text-decoration-line: none;
+    color:black;
+}
+#a2{
+    text-decoration-line: none;
+    color:gray;
+}
+.signUpMain table{
+    margin:50px auto;
+}
+.signUpMain td{
+    padding: 10px;
+}
+.signUpText{
+    border: 3px solid lightgray;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.signUpText:focus {
+    border: 3px solid rgb(136,202,169);
+    transition: .5s;
+}
+.usercheck {
+    text-align: center;
+}
+.usercheck input[type="radio"] {
+    width: 15px;height: 15px;
+}
+.usercheck * {
+    margin: 0 2%;
+}

@@ -3,6 +3,26 @@
 @import "nav.css";
 
 
+@font-face {
+    font-family: 'nanumB';
+    src: url(../fonts/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nanumEB';
+    src: url(../fonts/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nanumL';
+    src: url(../fonts/NanumSquareL.ttf);
+}
+
+@font-face {
+    font-family: 'nanumR';
+    src: url(../fonts/NanumSquareR.ttf);
+}
+
 body{
     overflow-x: hidden;
     margin-left:0px; padding:0px;

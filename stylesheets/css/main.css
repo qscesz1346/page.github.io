@@ -1,21 +1,15 @@
-@font-face {
-    font-family: 'nanumB';
-    src: url(../fonts/NanumSquareB.ttf) format('truetype');
+@media screen and (max-width:1920px){
+    .swiper-container{
+        width: 80%;
+        height: 50%;
+    }
+    #swiper-banner{
+        overflow: hidden;
+        margin: 0 10%;
+    }
 }
-
-@font-face {
-    font-family: 'nanumEB';
-    src: url(../fonts/NanumSquareEB.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'nanumL';
-    src: url(../fonts/NanumSquareL.ttf);
-}
-
-@font-face {
-    font-family: 'nanumR';
-    src: url(../fonts/NanumSquareR.ttf);
+@media screen and (max-width:500px) {
+    
 }
 
 @keyframes loginmove {
@@ -133,22 +127,6 @@
     to {
         right: -50%;
     }
-}
-
-
-
-@media screen and (max-width:1920px){
-    .swiper-container{
-        width: 80%;
-        height: 50%;
-    }
-    #swiper-banner{
-        overflow: hidden;
-        margin: 0 10%;
-    }
-}
-@media screen and (max-width:500px) {
-    
 }
 
 #navdiv {
@@ -351,10 +329,6 @@
 }
 
 .swiper-pagination-bullet {background-color: #5E5E5E;}
-
-#login {
-    display: none;
-}
 
 #BG {
     display: none;
