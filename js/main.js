@@ -50,7 +50,7 @@ $('#BG').on('click', function () {
 $('.loginicon').on('mouseover', function () {
     $(this)
         .css('cursor', 'pointer')
-        .css('opacity', '0.6');
+        .css('opacity', '0.8');
 });
 
 $('.loginicon').on('mouseleave', function () {
@@ -66,6 +66,22 @@ $('#btn').on('mouseover', function () {
 $('#btn').on('mouseleave', function () {
     $(this)
         .css('opacity', '1');
+});
+
+$('.signUpbtn').on('click',function(){
+    location.href = "signUp.html";
+});
+
+$('.signUpbtn').on('mouseover', function () {
+    $(this)
+        .css('cursor', 'pointer')
+        .css('opacity', '0.8');
+});
+
+$('.signUpbtn').on('mouseleave', function () {
+    $(this)
+        .css('opacity', '1')
+        .css('cursor', 'auto');
 });
 
 

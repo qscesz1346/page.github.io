@@ -24,8 +24,4 @@ circulateSplash(0);
 
 $('.enter').on('click', function () {
     location.href = "main.html";
-})
-
-$('.signUpbtn').on('click',function(){
-    location.href = "signUp.html";
-})
+});
