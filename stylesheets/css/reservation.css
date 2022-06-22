@@ -1,0 +1,147 @@
+/* 메인 */
+main{
+    height: 100%;
+}
+.main-container {
+    margin-top: 15%;
+}
+
+.main-area{
+    margin-top: 10%;
+    height: 400px;
+   
+}
+
+.main-area-t{
+    margin-top:5%;
+    height: 700px;
+}
+
+.pay-card-info{
+    margin-left: 5%;
+}
+.first-line {
+    margin-top:0px;
+    width:10%;
+    font-size:40px;
+}
+.second-line{
+    
+    width:80%;
+    height:300px;
+    margin-left:10%;
+    
+}
+
+.first-area{
+    display:flex;
+}
+
+.first-content{
+    width:50%;
+    margin:0 18%;
+}
+
+/* 카드 스타일 */
+.card{
+    width: 18rem;
+    position: absolute;
+    right: 13%;
+    top:30%;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text-c{
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+    
+}
+
+.list-group-item{
+    font-size:12px;
+}
+
+
+/* 인풋 */
+.input-area{
+    padding:5% 0%; 
+}
+.input-pay-area{
+    /* padding:5% 0%; */
+    flex-direction: row;
+
+}
+
+.input-paybox{
+    margin-bottom: 5%;
+}
+.form-label{
+    display:block;
+    margin:3% 0;
+}
+
+
+.pay-title{
+    margin-bottom: 4%;
+    
+}
+
+.reserv-input{
+    border:none;
+    border:1px solid lightgray;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.reserv-input:hover{
+    background-color: rgba(191, 249, 191, 0.708);
+}
+.reserv-input-1:hover{
+    background-color: rgba(191, 249, 191, 0.708);
+}
+.reserv-input-pay:hover{
+    background-color: rgba(191, 249, 191, 0.708);
+}
+
+.reserv-input-1{
+    border:none;
+    border:1px solid lightgray;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-left:3%;
+}
+.reserv-input-pay{
+    border:none;
+    border:1px solid lightgray;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width:5%;
+}
+/* 버튼 스타일 */
+.button-area{
+    font-size:20px; 
+    color:rgb(255,255,255); 
+    border:none;
+    background-color: rgb(82, 143, 108);
+    border-radius: 4px; 
+    line-height: 2.5em; 
+    text-align:center;
+    border-color: rgb(82, 143, 108);
+    font-family: "nanumR";
+    cursor: pointer;
+}
+.button-area:hover{
+    background-color: lightgray;
+}
+
+.reserv-button{
+    display: flex;
+    justify-content: center;
+    margin:5% auto;
+}
+.reserv-cvc{
+    margin-bottom:8%;
+}

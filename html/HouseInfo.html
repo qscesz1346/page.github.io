@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,13 @@
     <script src="https://kit.fontawesome.com/9c09db3bf3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../JS/slick/slick.css">
+    <script src="../JS/slick/slick.min.js"></script>
+
 </head>
+
 <body>
-    
+
     <!-- header -->
     <header>
         <div class="wrap">
@@ -73,204 +78,327 @@
     </div>
     <div id="BG"></div>
 
-        <style>
-            *{
-                
-            }
-        
+    <style>
+        * {}
 
-            .first-area{
-                width:100%;
-                height: 30%;
-                
-            }
-            .second-area {
-                position:relative;
-                left: 0;
-                top: 0;
-            }
-            .third-area{
-                width:100%;
-                height: 400px;
-                background-color: gray;
-            }
-            .second-line{
-                width: 200px;
-                height: 200px;
-              
-            }
-            #poto1{
+
+        .first-area {
+            width: 100%;
+
+        }
+
+        .third-area {
+            width: 100%;
+            height: 400px;
+            background-color: gray;
+        }
+
+        .slick img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .third-line-thr {
+
+            margin-top: 10px;
+            margin-left: 120px;
+            border: 1px solid gray;
+        }
+
+        .body {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .third-line-one {
+            margin-bottom: 10px;
+        }
+
+        #a1 {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        #third-line-2nd {
             display: flex;
-            }
-            .third-line-thr{
-                
-                margin-top: 10px;
-                margin-left: 120px;
-                border: 1px solid gray;
-            }
-            .body{
-                width: 70%;
-                margin: 0 auto;
-            }
-            .third-line-one{
-                margin-bottom: 10px;
-            }
-            #a1{
-                margin-top:20px;
-            }
-            .title{
-                font-weight:bold;
-                font-size:32px;
-            }
-            #third-line-2nd {
-                display: flex;
-                justify-content: center;
-                width: 30%;
-            }
-            #third-line-2nd + div {
-                margin: 5px;
-                width: 30%;
-            }
-            #third-line-2nd + div select {
-                margin: 5px;
-                width: 95%;
-                height: 30px;
-                padding-left: 20px;
-            }
-            .third-line-two {
-                /* border-collapse: collapse; */
-                text-align: center;
-                margin: 5px;
-            }
-            .third-line-two tr:nth-child(2) {
-                position:relative;
-                top:-2px;
-            }
-            .third-line-two input {
-                border: none;
-                outline: none;
-                text-align: center;
-            }
-            input[type='text'] {
-                width: 80%;
-            }
-            .td1 {
-                border: 1px solid gray;
-                border-bottom: 0;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-            }
-            .td2 {
-                border: 1px solid gray;
-                border-top: 0;
-                padding-bottom: 5px;
-                border-bottom-left-radius: 15px;
-                border-bottom-right-radius: 15px;
-            }
-            #resv {
-                margin: 1%;
-                width: 28%;
-                height: 40px;
-            }
-            .houseinfo-main {
-                width: 80%;
-                margin: 0 auto;
-                margin-top: 12%;
-            }
-        </style>
-<!------------------------------- Slick으로 house info img 처리 -------------------------->
-        <!-- 3번화면 main-->
+            justify-content: center;
+            width: 30%;
+        }
+
+        #third-line-2nd+div {
+            margin: 5px;
+            width: 30%;
+        }
+
+        #third-line-2nd+div select {
+            margin: 5px;
+            width: 95%;
+            height: 30px;
+            padding-left: 20px;
+        }
+
+        .third-line-two {
+            /* border-collapse: collapse; */
+            text-align: center;
+            margin: 5px;
+        }
+
+        .third-line-two tr:nth-child(2) {
+            position: relative;
+            top: -2px;
+        }
+
+        .third-line-two input {
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        input[type='text'] {
+            width: 80%;
+        }
+
+        .td1 {
+            border: 1px solid gray;
+            border-bottom: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .td2 {
+            border: 1px solid gray;
+            border-top: 0;
+            padding-bottom: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #resv {
+            margin: 1%;
+            width: 28%;
+            height: 40px;
+        }
+
+        .houseinfo-main {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 12%;
+        }
+
+        .slick #prev,
+        .slick #next {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .slick #prev {
+            top: 135px;
+            left: -25px;
+            z-index: 500;
+        }
+
+        .slick #next {
+            top: 135px;
+            left: 100%;
+        }
+
+        .slick-center {
+            transform: scale(2, 2);
+            transition: 0.5s;
+            box-shadow: 0 0 10px #fff;
+        }
+
+        .slick-center img {
+            opacity: 1;
+        }
+
+        .tmp {
+            width: 100%;
+
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .slick img {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            opacity: 0.6;
+            object-fit: cover;
+        }
+
+        .slick li {
+            margin: 0px;
+        }
+
+        .slick-arrow {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: white;
+            border: 0px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: gray;
+            box-shadow: 4px 4px 1px lightgray;
+        }
+
+        /* .slick {
+            position: relative;
+        } */
+    </style>
+    <!------------------------------- Slick으로 house info img 처리 -------------------------->
+    <!-- 3번화면 main-->
     <div class="houseinfo-main">
-         <div class="first-area">
-             <div class="first-line">
+        <div class="first-area">
+            <div class="first-line">
                 <h3>#주택</h3>
             </div>
 
             <!-- img line-->
             <div class="second-line">
-                <div id="poto1">
-                    <img src="../stylesheets/images/room1.webp" style=" width: 250px; height: 200px; margin: 20px;">
-                    <img src="../stylesheets/images/room2.webp" style=" width: 250px; height: 200px; margin: 20px">
-                </div>
+                <ul class="slick">
+                    <li>
+                        <img src="../stylesheets/images/index-3.jpg">
+                    </li>
+                    <li>
+                        <img src="../stylesheets/images/index-4.jpg">
+                    </li>
+                    <li>
+                        <img src="../stylesheets/images/index-5.jpg">
+                    </li>
+                    <li>
+                        <img src="../stylesheets/images/index-3.jpg">
+                    </li>
+                    <li>
+                        <img src="../stylesheets/images/index-4.jpg">
+                    </li>
+                    <li>
+                        <img src="../stylesheets/images/index-5.jpg">
+                    </li>
             </div>
         </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.slick').slick({
+                arrows: true,   //prev,next버튼 표시여부
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                speed: 1500,
+                index: 2,
+                prevArrow: "<button id=prev>&lt;</button>",
+                nextArrow: "<button id=next>&gt;</button>",
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
 
-        <div class="second-area">
-            <!-- 날짜 선택  -->
-            <div class="third-line">
-                <div class="third-line-one">
-                    <p id="a1">150,679원 /박</p>
-                </div>
-                <div id="third-line-2nd">
-                    <table class="third-line-two">
-                        <tr>
-                            <td class="td1">
-                                <input type="text" placeholder="체크인" readonly>
-                            </td>
-                        </tr>                    
-                        <tr>
-                            <td class="td2">
-                                <input type="date" value="2022-06-08">
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="third-line-two">
-                        <tr>
-                            <td class="td1">
-                                <input type="text" placeholder="체크아웃" readonly> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td2">
-                                <input type="date" value="2022-06-09">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div>
-                    <select>
-                        <option>1명</option>
-                        <option>2명</option>
-                        <option>3명</option>
-                        <option>4명</option>
-                        <option>5명</option>
-                        <option>6명</option>
-                        <option>7명</option>
-                        <option>8명</option>
-                        <option>9명</option>
-                        <option>10명</option>
-                    </select>
-                </div>
-                <button id="resv">예약하기</button>
-                <div>
-                     <div>
-                        <p>150,697x1박</p> 
-                        <p>서비스수수료</p>
-                    </div>
-                    <div>
-                        <p>150,679</p>
-                        <p>0원</p>
-                    </div>
-                </div>
-                <hr style="width: 180px; padding-left: 50px; margin-left: 0px;">
-                <div>
-                    150,697원
-                </div>
-                <hr style="margin-top:50px;">
+    <div class="second-area">
+        <!-- 날짜 선택  -->
+        <div class="third-line">
+            <div class="third-line-one">
+                <p id="a1">150,679원 /박</p>
             </div>
-            <div style="background-color: lightgray;width: 100px;height: 100px;position: absolute;">
-
+            <div id="third-line-2nd">
+                <table class="third-line-two">
+                    <tr>
+                        <td class="td1">
+                            <input type="text" placeholder="체크인" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td2">
+                            <input type="date" value="2022-06-08">
+                        </td>
+                    </tr>
+                </table>
+                <table class="third-line-two">
+                    <tr>
+                        <td class="td1">
+                            <input type="text" placeholder="체크아웃" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td2">
+                            <input type="date" value="2022-06-09">
+                        </td>
+                    </tr>
+                </table>
             </div>
+            <div>
+                <select>
+                    <option>1명</option>
+                    <option>2명</option>
+                    <option>3명</option>
+                    <option>4명</option>
+                    <option>5명</option>
+                    <option>6명</option>
+                    <option>7명</option>
+                    <option>8명</option>
+                    <option>9명</option>
+                    <option>10명</option>
+                </select>
+            </div>
+            <button id="resv">예약하기</button>
+            <div>
+                <div>
+                    <p>150,697x1박</p>
+                    <p>서비스수수료</p>
+                </div>
+                <div>
+                    <p>150,679</p>
+                    <p>0원</p>
+                </div>
+            </div>
+            <hr style="width: 180px; padding-left: 50px; margin-left: 0px;">
+            <div>
+                150,697원
+            </div>
+            <hr style="margin-top:50px;">
         </div>
+        <div style="background-color: lightgray;width: 100px;height: 100px;position: absolute;">
 
-
-
-        <div class="third-area">
-            <div class="title" >
-                후기
-            </div>
         </div>
+    </div>
+
+
+
+    <div class="third-area">
+        <div class="title">
+            후기
+        </div>
+    </div>
     </div>
 
     <!-- footer -->
@@ -370,4 +498,5 @@
         </div>
     </footer>
 </body>
+
 </html>

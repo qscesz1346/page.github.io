@@ -157,13 +157,13 @@ for(k=0;k<housemodal.length;k++){
                 .css('z-index', imgZidx + 99)
         
             $(modalimg).on('click', function () {
-                location.href = 'HouseInfo.html';
+                location.href = 'reservation.html';
             });
     
         });
 
         $('#con').on('click',function(){
-            location.href='HouseInfo.html';
+            location.href='reservation.html';
         })
     
         $('#BG').on('click', function () {

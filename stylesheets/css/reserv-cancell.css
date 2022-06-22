@@ -32,17 +32,21 @@
 .reserv-cancell-btn{
     position: relative;
     padding: 10%;
+    padding-left: 20%;
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 .reserv-cancell-btnStyle{
     margin-left: 15px;
-    width: 60px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     background-color: #293d33;
     color: white;
     border: none;
     border-radius: 10px;
     font-family: '나눔스퀘어기본';
-    font-size: 10px;
+    font-size: 12px;
     cursor: pointer;
     box-shadow:0 0 5px #555;
 }

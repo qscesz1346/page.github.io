@@ -1,0 +1,92 @@
+.signUpMain{
+    font-family: 'nanumR';
+    width:40%;
+    margin: 0 auto;
+    margin-top: 12%;
+}
+.signUpTitle{
+    position: relative;
+}
+.signUpTitle h1{
+    font-family: 'nanumEB';
+    position: absolute;
+    left: 38%;top: 42%;
+    font-style: italic;
+    color: white;
+}
+.signUpTitle img{
+    display:block;
+    z-index:-3;
+    width: 450px;
+    margin:0px auto;
+    height: 300px;
+}
+#a1{
+    text-decoration-line: none;
+    color:black;
+}
+#a2{
+    text-decoration-line: none;
+    color:gray;
+}
+.signUpMain table{
+    margin:50px auto;
+}
+.signUpMain td{
+    padding: 10px;
+}
+.signUpText{
+    border: 3px solid lightgray;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.signUpText:focus {
+    border: 3px solid rgb(136,202,169);
+    transition: .5s;
+}
+.usercheck {
+    text-align: center;
+    padding: 15px 10px;
+}
+.usercheck * {
+    margin: 0 2%;
+}
+.usercheck input[type=radio]{
+    display: none;
+}
+.usercheck input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.usercheck input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.usercheck input[type=radio]:checked+label{
+    background-color: rgb(136,202,169);
+    color: #fff;
+}
+input[type=submit] {
+    display: inline-block;
+    cursor: pointer;
+    height: 35px;
+    width: 90px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+input[type=submit]:hover {
+    background-color: rgb(136,202,169);
+    color: #fff;
+}
