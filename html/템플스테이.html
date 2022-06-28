@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9c09db3bf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheets/css/main.css">
     <link rel="stylesheet" href="../stylesheets/css/common.css">
-    <link rel="stylesheet" href="../stylesheets/css/템플스테이.css">
-</head>
+    <link rel="stylesheet" href="../stylesheets/css/navSlick.css">
+    <script defer src="../js/주택.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="../js/slick/slick.css">
+    <script src="../js/slick/slick.js"></script>
+    <title>Document</title>
+</head>
 <body>
     <header>
         <div class="wrap">
@@ -29,39 +33,65 @@
             </div>
         </div>
     </header>
-<div class="log1">
-    <a href="">
-        <img src="../img/logo img/camping.png"><span style="font-size: 2rem;">템플스테이</span>
-    </a>
-    <hr>
-</div>
-    <br>
-        <div class="camp-img">
-            <div>
-                <img src="../img/logo img/템플/템플1.png">
+    <div class="log1">
+        <img class="주택img" src="../stylesheets/images/Sublogo/temple.png">
+        <span style="font-size: 2rem;">템플 스테이</span>
+        <hr>
+        <div class="container-md">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/템플스테이/1.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/2.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/3.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/4.png" alt="" class="himg" />
+                </div>
                 <span>
-                    <h2>전주, 반야심경</h2>
-                    <h4>Host : 콘치즈 님</h4>
-                    <h5>100,000/박</h5>
+                    <h2>보현사</h2>
+                    <h4>Host : 주지스 님</h4>
+                    <h5>60,900/박</h5>
                 </span>
             </div>
-        <div>
-            <img src="../img/logo img/템플/템플2.png">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/템플스테이/5.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/11.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/4.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/6.png" alt="" class="himg" />
+                </div>
                 <span>
-                    <h2>동해, 불교가 좋다</h2>
-                    <h4>Host : 콘치즈 님</h4>
-                    <h5>159,000/박</h5>
+                    <h2>관음사</h2>
+                    <h4>Host : 일진스 님</h4>
+                    <h5>90,900/박</h5>
                 </span>
             </div>
-        <div>
-            <img src="../img/logo img/템플/템플3.png">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/템플스테이/9.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/10.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/3.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/4.png" alt="" class="himg" />
+                </div>
                 <span>
-                    <h2>경주, 선의 나침반</h2>
-                    <h4>Host : 콘치즈 님</h4>
-                    <h5>190,000/박</h5>
+                    <h2>원만사</h2>
+                    <h4>Host : 나무관세 님</h4>
+                    <h5>70,900/박</h5>
                 </span>
             </div>
         </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/템플스테이/8.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/7.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/12.png" alt="" class="himg" />
+                    <img src="../stylesheets/images/템플스테이/10.png" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>서봉사</h2>
+                    <h4>Host : 심청 님</h4>
+                    <h5>80,900/박</h5>
+                </span>
+            </div>
+    </div>
     <div class="footer-top">
         <div class="footer-menu">
             <ul>
@@ -87,21 +117,21 @@
                 <li><a href="">캠페인 기부</a></li>
             </ul>
         </div>
-    <div class="footer-app">
-        <div class="footer-app-info">
-            <div>
-                <h4><a href="">App 다운로드</a></h4>
-                <span>VIRBNB 앱 설치하고</span><br>
-                <span>더 편리하게 이용하세요.</span>
+        <div class="footer-app">
+            <div class="footer-app-info">
+                <div>
+                    <h4><a href="">App 다운로드</a></h4>
+                    <span>VIRBNB 앱 설치하고</span><br>
+                    <span>더 편리하게 이용하세요.</span>
+                </div>
+                <div class="footer-app-Btn">
+                    <button class="footer-app-Btn-style">구글플레이</button>
+                    <button class="footer-app-Btn-style">앱스토어</button>
+                </div>
             </div>
-            <div class="footer-app-Btn">
-                <button class="footer-app-Btn-style">구글플레이</button>
-                <button class="footer-app-Btn-style">앱스토어</button>
+            <div class="footer-app-QR">
+                <img src="../stylesheets/images/QRCodeImg.jpg" alt="" style="width: 100px; height: 100px;">
             </div>
-        </div>
-    <div class="footer-app-QR">
-        <img src="../stylesheets/images/QRCodeImg.jpg" alt="" style="width: 100px; height: 100px;">
-        </div>
         </div>
         <div class="footer-center">
             <div class="footer-center-info">
@@ -114,7 +144,6 @@
                 <img src="../stylesheets/images/facebook.png" class="footer-icon-img" alt="">
                 <img src="../stylesheets/images/youtube.png" class="footer-icon-img" alt="">
                 <img src="../stylesheets/images/share.png" class="footer-icon-img" alt="">
-
             </div>
             <div>
                 <h4>1500-0000</h4>
@@ -129,7 +158,6 @@
             </div>
         </div>
     </div>
-
     <div class="footer-bottom">
         <div class="footer-bottom-info">
             <div class="footer-bottom-menu">

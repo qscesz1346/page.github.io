@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9c09db3bf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheets/css/main.css">
     <link rel="stylesheet" href="../stylesheets/css/common.css">
-    <link rel="stylesheet" href="../stylesheets/css/주택.css">
-</head>
+    <link rel="stylesheet" href="../stylesheets/css/navSlick.css">
+    <script defer src="../js/주택.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="../js/slick/slick.css">
+    <script src="../js/slick/slick.js"></script>
+    <title>Document</title>
+</head>
 <body>
     <header>
         <div class="wrap">
@@ -30,36 +34,134 @@
         </div>
     </header>
     <div class="log1">
-        <a href="">
-            <img src="../stylesheets//images/camping.png"><span style="font-size: 2rem;">주택</span>
-        </a>
+        <img class="주택img" src="../stylesheets/images/Sublogo/home.png">
+        <span style="font-size: 2rem;">주택</span>
         <hr>
-    </div>
-    <br>
-    <div class="camp-img">
-        <div>
-            <img src="../stylesheets/images/주택1.webp">
-            <span>
-                <h2>설악산, 숲과 별이 만나는 때</h2>
-                <h4>Host : Yolo 님</h4>
-                <h5>90,900/박</h5>
-            </span>
+        <div class="container-md">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main1_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main1_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main1_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main1_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main1_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main1_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Jerry님의 숙소</h2>
+                    <h4>Host : Jerry 님</h4>
+                    <h5>90,900/박</h5>
+                </span>
+            </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main2_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main2_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main2_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main2_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main2_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main2_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Terry님의 숙소</h2>
+                    <h4>Host : Terry 님</h4>
+                    <h5>190,900/박</h5>
+                </span>
+            </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main3_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main3_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main3_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main3_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main3_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main3_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Jquery님의 숙소</h2>
+                    <h4>Host : Jquery 님</h4>
+                    <h5>80,900/박</h5>
+                </span>
+            </div>
         </div>
-        <div>
-            <img src="../stylesheets/images/주택2.webp">
-            <span>
-                <h2>Woody 님의 숙소</h2>
-                <h4>Host : Woody 님</h4>
-                <h5>150,000/박</h5>
-            </span>
+        <div class="container-md">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main4_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main4_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main4_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main4_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main4_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main4_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Java님의 숙소</h2>
+                    <h4>Host : Java 님</h4>
+                    <h5>190,900/박</h5>
+                </span>
+            </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main5_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main5_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main5_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main5_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main5_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main5_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>은별님의 숙소</h2>
+                    <h4>Host : 은별 님</h4>
+                    <h5>190,000/박</h5>
+                </span>
+            </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main6_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main6_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main6_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main6_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main6_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main6_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Eclips님의 숙소</h2>
+                    <h4>Host : Eclips 님</h4>
+                    <h5>200,000/박</h5>
+                </span>
+            </div>
         </div>
-        <div>
-            <img src="../stylesheets/images/주택3.webp">
-            <span>
-                <h2>가편, 폭풍의 언덕</h2>
-                <h4>Host : Jessie 님</h4>
-                <h5>190,000/박</h5>
-            </span>
+        <div class="container-md">
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택/Main7_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main7_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main7_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main7_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main7_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main7_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>별o님의 숙소</h2>
+                    <h4>Host : 별o 님</h4>
+                    <h5>80,900/박</h5>
+                </span>
+            </div>
+            <div class="container">
+                <div class="slick">
+                    <img src="../stylesheets/images/주택//Main8_img1.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main8_img2.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main8_img3.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main8_img4.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main8_img5.webp" alt="" class="himg" />
+                    <img src="../stylesheets/images/주택/Main8_img6.webp" alt="" class="himg" />
+                </div>
+                <span>
+                    <h2>Paint님의 숙소</h2>
+                    <h4>Host : Paint 님</h4>
+                    <h5>290,900/박</h5>
+                </span>
+            </div>
         </div>
     </div>
     <div class="footer-top">
@@ -114,7 +216,6 @@
                 <img src="../stylesheets/images/facebook.png" class="footer-icon-img" alt="">
                 <img src="../stylesheets/images/youtube.png" class="footer-icon-img" alt="">
                 <img src="../stylesheets/images/share.png" class="footer-icon-img" alt="">
-
             </div>
             <div>
                 <h4>1500-0000</h4>
@@ -129,7 +230,6 @@
             </div>
         </div>
     </div>
-
     <div class="footer-bottom">
         <div class="footer-bottom-info">
             <div class="footer-bottom-menu">
@@ -155,5 +255,4 @@
         </div>
     </div>
 </body>
-
 </html>
